@@ -16,13 +16,16 @@ $subject = $_POST['subject'];
 $message = $_POST['message'];
 	
 // Create the email and send the message
-$to = 'a7truong@uwaterloo.ca'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
+$email_from = 'andy.truong16@gmail.com';
 $email_subject = "Website Contact Form:  $name";
 $email_body = "You have received a new message from your website contact form.\n\n"."Here are the details:\n\nName: $name\n\nEmail: $email_address\n\nSubject: $subject\n\nMessage:\n$message";
-//$headers = "From: andy.truong16@gmail.com\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
-//$headers = "Reply-To: $email_address";	
-$from = "From: $name<$email_address>\r\nReturn-path: $email_address";
-mail("a7truong@uwaterloo.ca",$email_subject,$email_body,$from);
+
+$to = 'andy.truong16@gmail.com';
+$headers = "From: $email_from \r\n";
+
+mail($to, $email_subject, $email_body, $headers);
+
 echo "Email Sent!";
+
 return true;			
 ?>
