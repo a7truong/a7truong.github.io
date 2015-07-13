@@ -772,7 +772,7 @@ ul.social-buttons li a:active {
     padding: 100px 0;
     min-height: 100%;
     border: 0;
-    border-radius: 0;
+    border-radius: 70;
     text-align: center;
     background-clip: border-box;
     -webkit-box-shadow: none;
@@ -843,6 +843,83 @@ ul.social-buttons li a:active {
     display: none;
     opacity: 0;
 }
+
+.pp-tu-modal .modal-content {
+    padding: 10px 0;
+    min-height: 50%;
+    border: 0;
+    border-radius: 70;
+    text-align: center;
+    background-clip: border-box;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.pp-tu-modal .modal-content h2 {
+    margin-bottom: 5px;
+    font-size: 3em;
+}
+
+.pp-tu-modal .modal-content p {
+    margin-bottom: 5px;
+}
+
+.pp-tu-modal .modal-content p.item-intro {
+    margin: 10px 0 15px;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 8px;
+    font-style: italic;
+}
+
+.pp-tu-modal .modal-content ul.list-inline {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.pp-tu-modal .modal-content img {
+    margin-bottom: 5px;
+}
+
+.pp-tu-modal .close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.pp-tu-modal .close-modal:hover {
+    opacity: .3;
+}
+
+.pp-tu-modal .close-modal .lr {
+    z-index: 1051;
+    width: 1px;
+    height: 25px;
+    margin-left: 15px;
+    background-color: #222;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.pp-tu-modal .close-modal .lr .rl {
+    z-index: 1052;
+    width: 1px;
+    height: 25px;
+    background-color: #222;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.pp-tu-modal .modal-backdrop {
+    display: none;
+    opacity: 0;
+}
+
 
 ::-moz-selection {
     text-shadow: none;
