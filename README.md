@@ -2,5 +2,4 @@
 
 Personal Website:
 
-andytruong.me
-www.andytruong.me
+andytruong.me, www.andytruong.me
