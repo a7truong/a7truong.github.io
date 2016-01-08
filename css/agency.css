@@ -350,6 +350,35 @@ section h3.section-subheading {
     text-transform: none;
 }
 
+/* css for slider in modal 6 */
+#slider {
+    width: 600px;   /* height and width of image in slider */
+    height: 667px;
+    overflow: hidden;
+}
+
+#slider .slides {
+    display: block;
+    width: 6000px;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+}
+
+#slider .slide {
+    float: left;
+    list-style-type: none;
+    width: 720px;
+    height: 400px;
+}
+
+/* helper css, since we don't have images */
+.slide1 {background: white;}
+.slide2 {background: white;}
+.slide3 {background: white;}
+
+/* ---------------------- */
+
 #portfolio .portfolio-item {
     right: 0;
     margin: 0 0 15px;
