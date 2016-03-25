@@ -352,8 +352,8 @@ section h3.section-subheading {
 
 /* css for slider in modal 6 */
 #slider {
-    width: 650px;   /* height and width of image in slider */
-    height: 475px;
+    width: 655px;   /* height and width of image in slider */
+    height: 525px;
     overflow: hidden;
 }
 
