@@ -279,6 +279,11 @@ header .intro-text {
     padding-bottom: 50px;
 }
 
+header .intro-small-text {
+    padding-top: 75px;
+    padding-bottom: 50px;
+}
+
 header .intro-text .intro-lead-in {
     margin-bottom: 25px;
     font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
