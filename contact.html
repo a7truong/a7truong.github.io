@@ -22,6 +22,19 @@
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <style>
+    input {
+        border: 1px solid #a1a1a1;
+        border-radius: 3px;
+
+    }
+    textarea {
+        border: 1px solid #a1a1a1;
+        border-radius: 3px;
+    }
+    </style>
+
 </head>
 
 <body id="page-top" class="index">
@@ -62,27 +75,31 @@
         </div>
     </header>
 
-    <br>
-    <br>
-    <br>
+    <br><br><br>
 
+    <!-- CONTACT FORM & above style properties--> 
     <div class="container">
         <form id="contactform" method="POST">
-            <input type="text" name="name" placeholder="Name"> 
+
+            <label for="form_name">Name *</label><br>
+            <input type="text" name="name" placeholder="Please enter your name. *" size="50" required>
+            <br><br>
+            <label for="form_email">Email *</label><br>
+            <input type="email" name="_replyto" placeholder="Please enter your email. *" size="50" required>
+            <br><br>
+            <label for="form_subject">Subject *</label><br>
+            <input type="subject" name="_subject" placeholder="Please enter the topic of interest. *" size="50" required>
             <br>
+            <input type="hidden" name="_next" value="//andytruong.me/thanks.html">
             <br>
-            <input type="email" name="_replyto" placeholder="Email">
+            <label for="form_message">Messsage *</label><br>
+            <textarea name="message" placeholder="Message for us. Please include your phone number. *" rows="4" cols="100" required></textarea>
             <br>
+            <input type="text" name="_gotcha" style="display:none">
             <br>
-            <input type="subject" name="_subject" placeholder="Subject" />
-            <br>
-            <input type="hidden" name="_next" value="//andytruong.me/thanks.html" />
-            <br>
-            <textarea name="message" placeholder="Message" rows="4" cols="100"></textarea>
-            <br>
-            <input type="text" name="_gotcha" style="display:none" />
-            <br>
-            <input type="submit" value="Send">
+            <input type="submit" value="Send Message">
+            <br><br>
+            <p>* These fields are required. Alternatively, you can send an email to us by <a href="mailto:andy.truong16@gmail.com">clicking here</a>.</p>
         </form>
         <script>
             var contactform =  document.getElementById('contactform');
@@ -90,12 +107,8 @@
         </script>
     </div>
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+
+    <br><br><br><br><br><br>
 
     <footer>
         <div class="container">
@@ -193,31 +206,6 @@
         </div>
     </div>
 
-    <!-- Resume Modal -->
-<!--
-    <div class="pp-tu-modal modal fade" id="resume" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="modal-body">
-                        <h2>Résumé</h2> <br>
-                            <p align="justify">Please be advised that the follow document is password protected. If you would like to gain access to this document, please contact me at <a href="mailto:a7truong@uwaterloo.ca?Subject=I would like to view your password protected document." target="_top" style="text-decoration:none"><b>a7truong@uwaterloo.ca</b></a> or by clicking the <b>EMAIL</b> button below.<br><br>If you already have the password, please press the <b>ACCESS</b> button below to gain access and view the document.</p> <br><br>
-                            <button type="button" class="btn btn-primary" class="private-policy" data-toggle="modal"><a href="mailto:a7truong@uwaterloo.ca?Subject=I would like to view your password protected document." target="_top" style="text-decoration:none"><font color="white">Email</font></a></button> &nbsp;&nbsp;&nbsp;&nbsp;
-                            <button type="button" class="btn btn-primary" href="#resume2" class="private-policy" data-toggle="modal" data-dismiss="modal">Access</button> &nbsp;&nbsp;&nbsp;&nbsp;
-                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
--->
 
     <div class="pp-tu-modal modal fade" id="resume2" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
