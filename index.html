@@ -75,11 +75,16 @@
 
         <div class="container">
             <div class="intro-text">
-                <div class="intro-heading">Andy Truong
-                    <h3 class="section-subheading text-muted"><font color=#FED237>University of Waterloo | Canada</font></h3>
-                    <h3 class="section-subheading text-muted"><font color=white>Computing and Financial Management</font></h3>
-                    <h3 class="section-subheading text-muted"><font color=white size=4>Computer Science | Finance</font></h3>
+                <div class="intro-heading">
+                    <div class="typewriter"><font color=#FED237>HELLO</font></div>
+                    <h3 class="section-subheading text-muted">
+                        <div class="typewriter"><font color=white>Andy Truong</font></div>
+                    </h3>
+                    <h3 class="section-subheading text-muted">
+                        <div class="typewriter"><font color=white size=4>Computer Science and Finance</font></div>
+                    </h3>
                 </div>
+
                 <!-- <a href="#about" class="page-scroll btn btn-xl">Welcome</a> -->
                 <div class="blinker">
                     <a href="#about" class="page-scroll"> <img src="img/blinker.png" width = "75" height = "39"> </a>
@@ -201,7 +206,7 @@
                     <h4 align="left" style="margin-left:240px;">University of Waterloo</h4>
                     <p class="text-muted" align="left" style="margin-left:105px;">Bachelor of Computing and Financial Management</p>
                     <p class="text-muted" align="left" style="margin-left:260px; margin-top:-10px">September 2012 - April 2017</p>
-                    <p class="text-muted" align="left" style="margin-left:348px; margin-top:-10px"><a href="index2.html" target="_blank">List of Classes</a></p>
+                    <p class="text-muted" align="left" style="margin-left:348px; margin-top:-10px"><a href="index2.html">List of Classes</a></p>
                 </div>
                 <div class="team-member">
                     <h4 align="justify" style="margin-left:200px;">Awards and Achievements</h4>
@@ -335,6 +340,22 @@
                         <p class="text-muted">Windows Application Development</p>
                     </div>
                 </div>
+
+                <!-- GO TO MODAL 8 -->
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal8" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/cpp.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>C++ Programs</h4>
+                        <p class="text-muted">CLI Programs</p>
+                    </div>
+                </div>
             
             </div>
         </div>
@@ -350,7 +371,7 @@
                     <h3 class="section-subheading text-muted"></h3>
                 </div>
             </div>
-            <div style="float: left; width: 33%; padding-left:2.5cm">
+            <div style="float: left">
                 <font color="orange" size="4.5">Emails</font><br>
                 <font color=#FED237><a href="mailto:andy.truong16@gmail.com?Subject=Hello, I would like to get in touch with you." target="_top">andy.truong16@gmail.com</font></a>
                 <br>
@@ -358,13 +379,13 @@
                 <br>
                 <font color=#FED237><a href="contact.html">Contact Form</font></a>
             </div>
-            <div style="float: left; width: 33%; padding-left:3.85cm">
-                <font color="orange" size="4.5">Phone</font><br>
-                <font color=#FED237><a href="tel://1-647-880-1526">647.880.1526</a></font>
-            </div>
-            <div style="float: right; width: 33%; padding-left:2.5cm">
+            <div style="float: right">
                 <font color="orange" size="4.5">Address</font><br>
                 <font color=#FED237><a href="https://goo.gl/maps/LSnMQeZLX8G2" target="_blank">Brampton, Ontario, Canada<br>Greater Toronto Area</a></font><br>
+            </div>
+            <div style="margin: 0 auto; width: 100px;">
+                <font color="orange" size="4.5">Phone</font><br>
+                <font color=#FED237><a href="tel://1-647-880-1526">647.880.1526</a></font>
             </div>
         </div>
     </section>
@@ -787,6 +808,38 @@
                                 <li>Date: October 2016</li>
                                 <li>Category: Windows Application Development.</li>
                             </ul>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 8 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>C++ Programs</h2>
+                            <p class="item-intro text-muted">CLI Programs</p>
+                            <p align="justify"><br>These programs are written in C++ on the XCode environment. The programs are executed in the Command-Line interface. These programs uses a variety of data structures and algorithm design to solve a particular task.</p>
+                            
+                            <p align="justify"><font size="4.5"><strong>Blackjack | </strong></font>This program represents a mini card game, blackjack. A player goes against a dealer. Rules of the game: The player is given an option to hit, or stop. If the player hits and the cards sum up more than 21, he or she loses. The dealer automatically wins. If the player stops, the dealer automatically hits until they have a sum higher than the player or when the sum is above 21 (bust-out). If the dealer's sum is higher than the player, the dealer wins. If the dealer has a bust-out (and player's sum is less than or equal to 21), the player wins.
+                            <ul class="list-inline" style="margin-top:-20px;">
+                                <li>Date: May 2017</li>
+                            </ul>
+                            </p>
+
+
                             <button type="button" class="btn btn-primary" data-dismiss="modal">Close Project</button>
                         </div>
                     </div>

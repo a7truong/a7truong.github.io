@@ -35,14 +35,14 @@ a.active {
 }
 
 a {
-    color: #fed136;
+    color: orange;
 }
 
 a:hover,
 a:focus,
 a:active,
 a.active {
-    color: #fec503;
+    color: orange;
 }
 
 h1,
@@ -298,16 +298,14 @@ header .intro-text .intro-heading {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 50px;
     font-weight: 700;
-    line-height: 50px;
+    line-height: 250px;
 }
 
 /* below code is for the arrow on the welcome page, animation code below 
 */
 header .blinker {
-    position: absolute;
-    bottom: 70px;
-    left: 50%;
-    margin-left: -12.5px;
+    position: center;
+
     -webkit-animation-name: blinker;
     -webkit-animation-duration: 1.5s;
     -webkit-animation-timing-function: linear;
@@ -342,6 +340,30 @@ header .blinker {
     100% { opacity: 1.0; }
 }
 
+header .typewriter {
+    line-height: 100%;
+    font-size: 150%;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+        typing 3.5s steps(40, end),
+        blink-caret 1s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  0% { border-color: transparent; }
+  50% { border-color: transparent; }
+}
 
 @media(min-width:768px) {
     header .intro-text {
