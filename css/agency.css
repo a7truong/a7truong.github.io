@@ -17,6 +17,12 @@ body {
     color: #fed136;
 }
 
+.uparrow {
+    position: absolute;
+    bottom: 50px;
+    right: -8%;
+}
+
 p {
     font-size: 14px;
     line-height: 1.75;
@@ -265,7 +271,7 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url(../img/black.jpg);
+    background-image: url(../img/header.jpg);
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
@@ -1018,15 +1024,16 @@ ul.social-buttons li a:active {
     opacity: 0;
 }
 
-
+/* changes highlight colour */
 ::-moz-selection {
     text-shadow: none;
-    background: #fed136;
+    background: #b3b3b3;
 }
 
+/* changes highlight colour */
 ::selection {
     text-shadow: none;
-    background: #fed136;
+    background: #b3b3b3;
 }
 
 img::selection {
@@ -1038,5 +1045,5 @@ img::-moz-selection {
 }
 
 body {
-    webkit-tap-highlight-color: #fed136;
+    webkit-tap-highlight-color: #222222;
 }
